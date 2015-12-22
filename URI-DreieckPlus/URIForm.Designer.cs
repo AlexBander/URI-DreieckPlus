@@ -95,6 +95,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label24 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Warnung = new System.Windows.Forms.Label();
             maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -118,7 +119,7 @@
             maskedTextBox1.Name = "maskedTextBox1";
             maskedTextBox1.Size = new System.Drawing.Size(319, 10);
             maskedTextBox1.TabIndex = 16;
-            maskedTextBox1.Text = "Created by AlexB - 2015 - v.1.81";
+            maskedTextBox1.Text = "Created by AlexB - 2015 - v.1.90";
             maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btn1
@@ -613,6 +614,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.Warnung);
             this.tabPage4.Controls.Add(this.vGeKM);
             this.tabPage4.Controls.Add(this.vGe);
             this.tabPage4.Controls.Add(this.label21);
@@ -787,9 +789,6 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
-            // 
-            // splitContainer1.Panel2
-            // 
             this.splitContainer1.Size = new System.Drawing.Size(150, 100);
             this.splitContainer1.TabIndex = 1;
             // 
@@ -802,7 +801,19 @@
             this.label24.TabIndex = 0;
             this.label24.Text = "label24";
             // 
-            // Form1
+            // Warnung
+            // 
+            this.Warnung.AutoSize = true;
+            this.Warnung.BackColor = System.Drawing.Color.Yellow;
+            this.Warnung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Warnung.Cursor = System.Windows.Forms.Cursors.No;
+            this.Warnung.Location = new System.Drawing.Point(129, 34);
+            this.Warnung.Name = "Warnung";
+            this.Warnung.Size = new System.Drawing.Size(213, 15);
+            this.Warnung.TabIndex = 15;
+            this.Warnung.Text = "Diese Angaben sind ohne jegliche Gewähr!";
+            // 
+            // URIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -815,7 +826,7 @@
             this.Controls.Add(this.btn1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "URIForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Übungsaufgaben - 01 EBAS - FISI Winter 2015";
             this.tabControl1.ResumeLayout(false);
@@ -903,6 +914,7 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label Warnung;
     }
 }
 
