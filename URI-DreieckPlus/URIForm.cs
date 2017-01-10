@@ -19,26 +19,29 @@ namespace URIdreieckGUI
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%% U-R-I - Deklare %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
         //  Tab1 U-R-I - Deklare
-        double anDoubleR, anDoubleI, anDoubleU, pvE;
+        private double anDoubleR, anDoubleI, anDoubleU, pvE;
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
         //  Tab2 Arithmetik - Deklare
-        string pGRAo;
-        double aDvGRA1, aDvGRA2, pGRAe, pGRAeR;
-        int pGRAgE;
+        private string pGRAo;
+
+        private double aDvGRA1, aDvGRA2, pGRAe, pGRAeR;
+        private int pGRAgE;
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
         //  Tab3 Fahrenheit - Deklare
-        double aDvFc, aDvFfe;
+        private double aDvFc, aDvFfe;
+
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
-       
         //  Tab4  Gewitter   -   Deklare
-        double aDvGt, vGv, aDvGk;
-
+        private double aDvGt, vGv, aDvGk;
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -71,18 +74,17 @@ namespace URIdreieckGUI
             {
                 tb2.Clear();
             }
-
         }
+
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
         //  Tab2 - GRA Arithmetik
         private void tabPage2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void vGRA1_TextChanged(object sender, EventArgs e)
-            {
+        {
             {
                 try
                 {
@@ -109,13 +111,10 @@ namespace URIdreieckGUI
                     vGRA2.Clear();
                 }
             }
-
         }
-
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -142,7 +141,6 @@ namespace URIdreieckGUI
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
         //  Tab4    -   Gewitter
-
 
         private void vGt_TextChanged(object sender, EventArgs e)
         {
@@ -176,11 +174,10 @@ namespace URIdreieckGUI
 
         private void vGbtn1_Click(object sender, EventArgs e)
         {
-            vGv = (331.6+(0.6*aDvGk));
+            vGv = (331.6 + (0.6 * aDvGk));
             vGe.Text = Convert.ToString(aDvGt * vGv) + " m";
             vGeKM.Text = Convert.ToString((aDvGt * vGv) / 1000) + " km";
         }
-
 
         private void tb4_TextChanged_1(object sender, EventArgs e)
         {
@@ -205,46 +202,47 @@ namespace URIdreieckGUI
         // Button Operation
         //  Berechnen
         private void btn1_Click(object sender, EventArgs e)
+        {
+            // Tab1 - U-R-I
+            if (rb3.Checked == true)                                //Spannung berechnen
             {
-                // Tab1 - U-R-I
-                if (rb3.Checked == true)                                //Spannung berechnen
-                        {
-                            pvE = anDoubleR * anDoubleI;
-                            this.vEe.Text = "in V";
-                        }
-                    else if (rb2.Checked == true)                           // Strom berechnen
-                        {
-                            pvE = anDoubleU / anDoubleR;
-                            this.vEe.Text = "in A";
-                        }
-                    else if (rb1.Checked == true)                                                  // Widerstand berechnen
-                        {
-                            pvE = anDoubleU / anDoubleI;
-                            this.vEe.Text = "in \u2126";
-                        }
-                    else if (rbGRAa.Checked == true)                                          // Addition
-                        {
-                            pGRAe = aDvGRA1 + aDvGRA2;
-                            pGRAo = " + ";
-                        }
-                    else if (rbGRAs.Checked == true)                                          // Subtraktion
-                        {
-                            pGRAe = aDvGRA1 - aDvGRA2;
-                            pGRAo = " - ";
-                        }
+                pvE = anDoubleR * anDoubleI;
+                this.vEe.Text = "in V";
+            }
+            else if (rb2.Checked == true)                           // Strom berechnen
+            {
+                pvE = anDoubleU / anDoubleR;
+                this.vEe.Text = "in A";
+            }
+            else if (rb1.Checked == true)                                                  // Widerstand berechnen
+            {
+                pvE = anDoubleU / anDoubleI;
+                this.vEe.Text = "in \u2126";
+            }
+            // Tab2 -
+            else if (rbGRAa.Checked == true)                                          // Addition
+            {
+                pGRAe = aDvGRA1 + aDvGRA2;
+                pGRAo = " + ";
+            }
+            else if (rbGRAs.Checked == true)                                          // Subtraktion
+            {
+                pGRAe = aDvGRA1 - aDvGRA2;
+                pGRAo = " - ";
+            }
             else if (rbGRAm.Checked == true)                                                  // Multiplikation
-                        {
-                            pGRAe = aDvGRA1 * aDvGRA2;
-                            pGRAo = " * ";
-                        }
+            {
+                pGRAe = aDvGRA1 * aDvGRA2;
+                pGRAo = " * ";
+            }
             else if (rbGRAd.Checked == true)                                                  // Division
-                        {
-                            pGRAe = aDvGRA1 / aDvGRA2;
-                            pGRAeR = aDvGRA1 % aDvGRA2;
-                            pGRAgE = Convert.ToInt32(pGRAe);
-                            pGRAo = " / ";
-                            this.vGRAgE.Text = pGRAgE.ToString();
-                            this.vGRAeR.Text = pGRAeR.ToString();
+            {
+                pGRAe = aDvGRA1 / aDvGRA2;
+                pGRAeR = aDvGRA1 % aDvGRA2;
+                pGRAgE = Convert.ToInt32(pGRAe);
+                pGRAo = " / ";
+                this.vGRAgE.Text = pGRAgE.ToString();
+                this.vGRAeR.Text = pGRAeR.ToString();
             }
 
             // Tab1 URI
@@ -252,8 +250,8 @@ namespace URIdreieckGUI
             // Tab2 Grundrechenarten
             this.vGRAe.Text = pGRAe.ToString();
             this.vGRAo.Text = pGRAo;
-
         }
+
         //  Reset
         private void btn2_Click(object sender, EventArgs e)
         {
@@ -261,30 +259,36 @@ namespace URIdreieckGUI
             tb2.Clear();
             tb3.Clear();
             tb4.Clear();
-                //  Tab 2 - Clear
+            rb1.Checked = false;
+            rb2.Checked = false;
+            rb3.Checked = false;
+            //  Tab 2 - Clear
             vGRA1.Clear();
             vGRA2.Clear();
             vGRA1.Clear();
             vGRAe.Clear();
             vGRAeR.Clear();
             vGRAgE.Clear();
-                //  Tab 3 - Clear
+            rbGRAa.Checked = false;
+            rbGRAd.Checked = false;
+            rbGRAs.Checked = false;
+            rbGRAm.Checked = false;
+            //  Tab 3 - Clear
             vFc.Clear();
             vFf.Clear();
-               //   Tab 4 - Clear
+            //   Tab 4 - Clear
             tb4.Clear();
             vGt.Clear();
             vGe.Clear();
             vGeKM.Clear();
             vGtemp.Text = "10 °";
-
         }
+
         //  Schließen
         private void btn3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Vielen Dank für die Nutzung dieses Programmes :)");
             Environment.Exit(0);
-
         }
     }
 }

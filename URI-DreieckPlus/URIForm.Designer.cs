@@ -78,6 +78,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.Warnung = new System.Windows.Forms.Label();
             this.vGeKM = new System.Windows.Forms.TextBox();
             this.vGe = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -95,7 +96,6 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label24 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Warnung = new System.Windows.Forms.Label();
             maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -635,6 +635,18 @@
             this.tabPage4.Text = "Gewitter";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // Warnung
+            // 
+            this.Warnung.AutoSize = true;
+            this.Warnung.BackColor = System.Drawing.Color.Yellow;
+            this.Warnung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Warnung.Cursor = System.Windows.Forms.Cursors.No;
+            this.Warnung.Location = new System.Drawing.Point(129, 34);
+            this.Warnung.Name = "Warnung";
+            this.Warnung.Size = new System.Drawing.Size(213, 15);
+            this.Warnung.TabIndex = 15;
+            this.Warnung.Text = "Diese Angaben sind ohne jegliche Gewähr!";
+            // 
             // vGeKM
             // 
             this.vGeKM.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -800,18 +812,6 @@
             this.label24.Size = new System.Drawing.Size(41, 13);
             this.label24.TabIndex = 0;
             this.label24.Text = "label24";
-            // 
-            // Warnung
-            // 
-            this.Warnung.AutoSize = true;
-            this.Warnung.BackColor = System.Drawing.Color.Yellow;
-            this.Warnung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Warnung.Cursor = System.Windows.Forms.Cursors.No;
-            this.Warnung.Location = new System.Drawing.Point(129, 34);
-            this.Warnung.Name = "Warnung";
-            this.Warnung.Size = new System.Drawing.Size(213, 15);
-            this.Warnung.TabIndex = 15;
-            this.Warnung.Text = "Diese Angaben sind ohne jegliche Gewähr!";
             // 
             // URIForm
             // 
