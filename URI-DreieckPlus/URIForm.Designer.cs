@@ -92,6 +92,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.VersionField = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label24 = new System.Windows.Forms.Label();
@@ -119,7 +120,8 @@
             maskedTextBox1.Name = "maskedTextBox1";
             maskedTextBox1.Size = new System.Drawing.Size(319, 10);
             maskedTextBox1.TabIndex = 16;
-            maskedTextBox1.Text = "Created by AlexB - 2015 - v.1.90";
+            string versionNum = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            maskedTextBox1.Text = $"Created by AlexB - 2015 - v.{versionNum}";
             maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btn1
@@ -785,6 +787,18 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            this.tabPage5.MouseHover += new System.EventHandler(tabPage5_Enter);
+  //          this.tabPage5.HelpRequested += new  System.Windows.Forms.HelpEventHandler(this.tabPage5_Enter);
+            // 
+            // VersionField
+            // 
+            this.VersionField.AutoSize = true;
+            this.VersionField.Location = new System.Drawing.Point(12, 9);
+            this.VersionField.Name = "VersionField";
+            this.VersionField.Size = new System.Drawing.Size(42, 13);
+            this.VersionField.TabIndex = 3;
+            this.VersionField.Text = "Version";
+            this.VersionField.Visible = false;
             // 
             // textBox2
             // 
@@ -819,6 +833,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 352);
             this.ControlBox = false;
+            this.Controls.Add(this.VersionField);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(maskedTextBox1);
             this.Controls.Add(this.btn3);
@@ -915,6 +930,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label Warnung;
+        private System.Windows.Forms.Label VersionField;
     }
 }
 

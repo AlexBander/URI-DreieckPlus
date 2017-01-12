@@ -117,7 +117,21 @@ namespace URIdreieckGUI
         {
         }
 
-        /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+        private void tabPage5_Enter(object sender, EventArgs e)
+        {
+            string version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            this.VersionField.Text = version;
+            this.VersionField.Visible = true;
+        }
+
+        private void tabPage5_MouseHover(object sender, EventArgs e)
+        {
+            string version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            this.VersionField.Text = version;
+            this.VersionField.Visible = true;
+        }
+
+          /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
         //  Tab 3   -   Fahrenheit
         private void fFbtn1_Click(object sender, EventArgs e)
