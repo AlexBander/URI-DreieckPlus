@@ -54,7 +54,8 @@
     <ManifestCertificateThumbprint>006BA3F6771FF185982C2C393C08EA7605C6AD6D</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>AlexBander-soft2.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -115,6 +116,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="2_AlexBander-soft.pfx" />
     <None Include="AlexBander-soft.pfx" />
     <None Include="AlexBander-soft.snk" />
     <None Include="AlexBander-soft2.pfx" />

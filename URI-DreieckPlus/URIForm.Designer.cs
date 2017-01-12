@@ -20,16 +20,25 @@
             base.Dispose(disposing);
         }
 
-        #region Vom Windows Form-Designer generierter Code
+        private void moreComponents()
+        {
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(150, 328);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(41, 13);
+            this.label25.TabIndex = 18;
+            this.label25.Text = versionTxT;
+        }
 
-        /// <summary>
-        /// Erforderliche Methode für die Designerunterstützung.
-        /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
-        /// </summary>
-        private void InitializeComponent()
+    #region Vom Windows Form-Designer generierter Code
+
+    /// <summary>
+    /// Erforderliche Methode für die Designerunterstützung.
+    /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+    /// </summary>
+    private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.MaskedTextBox maskedTextBox1;
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
@@ -92,12 +101,12 @@
             this.label19 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.VersionField = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label24 = new System.Windows.Forms.Label();
+            this.VersionField = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -107,22 +116,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // maskedTextBox1
-            // 
-            maskedTextBox1.BackColor = System.Drawing.SystemColors.Menu;
-            maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            maskedTextBox1.Enabled = false;
-            maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-            maskedTextBox1.HideSelection = false;
-            maskedTextBox1.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            maskedTextBox1.Location = new System.Drawing.Point(92, 342);
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new System.Drawing.Size(319, 10);
-            maskedTextBox1.TabIndex = 16;
-            string versionNum = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            maskedTextBox1.Text = $"Created by AlexB - 2015 - v.{versionNum}";
-            maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btn1
             // 
@@ -787,18 +780,7 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
-            this.tabPage5.MouseHover += new System.EventHandler(tabPage5_Enter);
-  //          this.tabPage5.HelpRequested += new  System.Windows.Forms.HelpEventHandler(this.tabPage5_Enter);
-            // 
-            // VersionField
-            // 
-            this.VersionField.AutoSize = true;
-            this.VersionField.Location = new System.Drawing.Point(12, 9);
-            this.VersionField.Name = "VersionField";
-            this.VersionField.Size = new System.Drawing.Size(42, 13);
-            this.VersionField.TabIndex = 3;
-            this.VersionField.Text = "Version";
-            this.VersionField.Visible = false;
+            this.tabPage5.MouseHover += new System.EventHandler(this.tabPage5_Enter);
             // 
             // textBox2
             // 
@@ -827,15 +809,25 @@
             this.label24.TabIndex = 0;
             this.label24.Text = "label24";
             // 
+            // VersionField
+            // 
+            this.VersionField.AutoSize = true;
+            this.VersionField.Location = new System.Drawing.Point(12, 9);
+            this.VersionField.Name = "VersionField";
+            this.VersionField.Size = new System.Drawing.Size(42, 13);
+            this.VersionField.TabIndex = 3;
+            this.VersionField.Text = "Version";
+            this.VersionField.Visible = false;
+              // 
             // URIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 352);
             this.ControlBox = false;
+            this.Controls.Add(this.label25);
             this.Controls.Add(this.VersionField);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(maskedTextBox1);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
@@ -931,6 +923,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label Warnung;
         private System.Windows.Forms.Label VersionField;
+        private System.Windows.Forms.Label label25;
     }
 }
 

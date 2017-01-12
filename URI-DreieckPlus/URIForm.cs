@@ -12,10 +12,16 @@ namespace URIdreieckGUI
 {
     public partial class URIForm : Form
     {
+
         public URIForm()
         {
             InitializeComponent();
+            moreComponents();
         }
+
+   
+        private string versionTxT = $"Created by AlexB - 2015 - v.{ System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString() }";
+
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%% U-R-I - Deklare %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -119,15 +125,14 @@ namespace URIdreieckGUI
 
         private void tabPage5_Enter(object sender, EventArgs e)
         {
-            string version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            this.VersionField.Text = version;
+            this.VersionField.Text = versionTxT;
             this.VersionField.Visible = true;
         }
 
         private void tabPage5_MouseHover(object sender, EventArgs e)
         {
-            string version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            this.VersionField.Text = version;
+            
+            this.VersionField.Text = versionTxT;
             this.VersionField.Visible = true;
         }
 
@@ -140,6 +145,7 @@ namespace URIdreieckGUI
             this.vFf.Text = aDvFfe.ToString();
         }
 
+ 
         private void vFc_TextChanged(object sender, EventArgs e)
         {
             try
@@ -155,7 +161,7 @@ namespace URIdreieckGUI
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
         //  Tab4    -   Gewitter
-
+   
         private void vGt_TextChanged(object sender, EventArgs e)
         {
             {
