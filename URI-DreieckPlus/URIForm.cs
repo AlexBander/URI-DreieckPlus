@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace URIdreieckGUI
 {
     public partial class URIForm : Form
@@ -21,7 +23,6 @@ namespace URIdreieckGUI
 
    
         private string versionTxT = $"Created by AlexB - 2015 - v.{ System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString() }";
-
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%% U-R-I - Deklare %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -119,14 +120,11 @@ namespace URIdreieckGUI
             }
         }
 
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
         private void tabPage5_Enter(object sender, EventArgs e)
         {
             this.VersionField.Text = versionTxT;
             this.VersionField.Visible = true;
+            
         }
 
         private void tabPage5_MouseHover(object sender, EventArgs e)
@@ -136,7 +134,13 @@ namespace URIdreieckGUI
             this.VersionField.Visible = true;
         }
 
-          /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+        private void URIForm_Load(object sender, EventArgs e)
+        {
+            this.VersionField.Text = versionTxT;
+            this.VersionField.Visible = true;
+        }
+
+        /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
         //  Tab 3   -   Fahrenheit
         private void fFbtn1_Click(object sender, EventArgs e)

@@ -23,7 +23,7 @@
         private void moreComponents()
         {
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(150, 328);
+            this.label25.Location = new System.Drawing.Point(150, 323);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(41, 13);
             this.label25.TabIndex = 18;
@@ -39,6 +39,7 @@
     private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(URIForm));
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
@@ -162,6 +163,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.vEe);
             this.tabPage1.Controls.Add(this.label4);
@@ -186,7 +188,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(296, 41);
+            this.label5.Location = new System.Drawing.Point(140, 147);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 13);
             this.label5.TabIndex = 28;
@@ -195,7 +197,7 @@
             // vEe
             // 
             this.vEe.AutoSize = true;
-            this.vEe.Location = new System.Drawing.Point(284, 152);
+            this.vEe.Location = new System.Drawing.Point(409, 83);
             this.vEe.Name = "vEe";
             this.vEe.Size = new System.Drawing.Size(48, 13);
             this.vEe.TabIndex = 27;
@@ -204,7 +206,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(113, 152);
+            this.label4.Location = new System.Drawing.Point(243, 84);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 26;
@@ -213,7 +215,7 @@
             // rb3
             // 
             this.rb3.AutoSize = true;
-            this.rb3.Location = new System.Drawing.Point(299, 109);
+            this.rb3.Location = new System.Drawing.Point(195, 163);
             this.rb3.Name = "rb3";
             this.rb3.Size = new System.Drawing.Size(74, 17);
             this.rb3.TabIndex = 24;
@@ -224,7 +226,7 @@
             // rb2
             // 
             this.rb2.AutoSize = true;
-            this.rb2.Location = new System.Drawing.Point(299, 83);
+            this.rb2.Location = new System.Drawing.Point(158, 127);
             this.rb2.Name = "rb2";
             this.rb2.Size = new System.Drawing.Size(52, 17);
             this.rb2.TabIndex = 22;
@@ -235,7 +237,7 @@
             // rb1
             // 
             this.rb1.AutoSize = true;
-            this.rb1.Location = new System.Drawing.Point(299, 57);
+            this.rb1.Location = new System.Drawing.Point(110, 163);
             this.rb1.Name = "rb1";
             this.rb1.Size = new System.Drawing.Size(79, 17);
             this.rb1.TabIndex = 21;
@@ -245,16 +247,16 @@
             // 
             // tb4
             // 
-            this.tb4.Location = new System.Drawing.Point(180, 108);
+            this.tb4.Location = new System.Drawing.Point(146, 99);
             this.tb4.Name = "tb4";
-            this.tb4.Size = new System.Drawing.Size(100, 20);
+            this.tb4.Size = new System.Drawing.Size(46, 20);
             this.tb4.TabIndex = 20;
             this.tb4.TextChanged += new System.EventHandler(this.tb4_TextChanged_1);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(91, 111);
+            this.label3.Location = new System.Drawing.Point(134, 83);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 25;
@@ -268,7 +270,7 @@
             this.tb3.Enabled = false;
             this.tb3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
             this.tb3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.tb3.Location = new System.Drawing.Point(180, 152);
+            this.tb3.Location = new System.Drawing.Point(303, 83);
             this.tb3.Name = "tb3";
             this.tb3.Size = new System.Drawing.Size(100, 16);
             this.tb3.TabIndex = 23;
@@ -276,24 +278,24 @@
             // 
             // tb2
             // 
-            this.tb2.Location = new System.Drawing.Point(180, 82);
+            this.tb2.Location = new System.Drawing.Point(222, 185);
             this.tb2.Name = "tb2";
-            this.tb2.Size = new System.Drawing.Size(100, 20);
+            this.tb2.Size = new System.Drawing.Size(47, 20);
             this.tb2.TabIndex = 18;
             this.tb2.TextChanged += new System.EventHandler(this.tb2_TextChanged_1);
             // 
             // tb1
             // 
-            this.tb1.Location = new System.Drawing.Point(180, 56);
+            this.tb1.Location = new System.Drawing.Point(84, 185);
             this.tb1.Name = "tb1";
-            this.tb1.Size = new System.Drawing.Size(100, 20);
+            this.tb1.Size = new System.Drawing.Size(35, 20);
             this.tb1.TabIndex = 16;
             this.tb1.TextChanged += new System.EventHandler(this.tb1_TextChanged_1);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(115, 85);
+            this.label2.Location = new System.Drawing.Point(221, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 19;
@@ -302,7 +304,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 59);
+            this.label1.Location = new System.Drawing.Point(64, 208);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 17;
@@ -793,10 +795,6 @@
             // 
             this.splitContainer1.Location = new System.Drawing.Point(44, 115);
             this.splitContainer1.Name = "splitContainer1";
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(150, 100);
             this.splitContainer1.TabIndex = 1;
             // 
@@ -818,12 +816,19 @@
             this.VersionField.TabIndex = 3;
             this.VersionField.Text = "Version";
             this.VersionField.Visible = false;
-              // 
+            // 
+            // label25
+            // 
+            this.label25.Location = new System.Drawing.Point(0, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(100, 23);
+            this.label25.TabIndex = 0;
+            // 
             // URIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 352);
+            this.ClientSize = new System.Drawing.Size(479, 348);
             this.ControlBox = false;
             this.Controls.Add(this.label25);
             this.Controls.Add(this.VersionField);
@@ -836,6 +841,7 @@
             this.Name = "URIForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Übungsaufgaben - 01 EBAS - FISI Winter 2015";
+            this.Load += new System.EventHandler(this.URIForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
