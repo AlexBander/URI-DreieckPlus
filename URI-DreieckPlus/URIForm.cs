@@ -20,11 +20,12 @@ namespace URIdreieckGUI
             test(label26);
         }
 
-        internal string versionTxT = $"Created by AlexB \n - 2015 - v.{ System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString() }";
+        public string versionNum = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+        internal string versionTxT = $"Created by AlexB - 2015 - v.";
 
         internal void test(Label a)
         {
-            a.Text = versionTxT;
+            a.Text = $"{versionTxT}{versionNum }";
         }
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%% U-R-I - Deklare %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

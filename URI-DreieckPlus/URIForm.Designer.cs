@@ -93,10 +93,10 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.VersionField = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label24 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.VersionField = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -804,6 +804,16 @@
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 2;
             // 
+            // VersionField
+            // 
+            this.VersionField.AutoSize = true;
+            this.VersionField.Location = new System.Drawing.Point(15, 18);
+            this.VersionField.Name = "VersionField";
+            this.VersionField.Size = new System.Drawing.Size(42, 13);
+            this.VersionField.TabIndex = 3;
+            this.VersionField.Text = "Version";
+            this.VersionField.Visible = false;
+            // 
             // splitContainer1
             // 
             this.splitContainer1.Location = new System.Drawing.Point(44, 115);
@@ -822,23 +832,12 @@
             // 
             // label26
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(158, 323);
+            this.label26.Location = new System.Drawing.Point(184, 311);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(42, 13);
+            this.label26.Size = new System.Drawing.Size(136, 37);
             this.label26.TabIndex = 29;
             this.label26.Text = "Version";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // VersionField
-            // 
-            this.VersionField.AutoSize = true;
-            this.VersionField.Location = new System.Drawing.Point(15, 18);
-            this.VersionField.Name = "VersionField";
-            this.VersionField.Size = new System.Drawing.Size(42, 13);
-            this.VersionField.TabIndex = 3;
-            this.VersionField.Text = "Version";
-            this.VersionField.Visible = false;
             // 
             // URIForm
             // 
@@ -872,7 +871,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
