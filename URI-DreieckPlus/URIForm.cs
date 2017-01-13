@@ -8,21 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-
 namespace URIdreieckGUI
 {
     public partial class URIForm : Form
     {
-
         public URIForm()
         {
             InitializeComponent();
-            moreComponents();
+            //            moreComponents();
+            //            test(label26);
+            test(label26);
         }
 
-   
-        private string versionTxT = $"Created by AlexB - 2015 - v.{ System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString() }";
+        internal string versionTxT = $"Created by AlexB \n - 2015 - v.{ System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString() }";
+
+        internal void test(Label a)
+        {
+            a.Text = versionTxT;
+        }
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%% U-R-I - Deklare %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -124,12 +127,10 @@ namespace URIdreieckGUI
         {
             this.VersionField.Text = versionTxT;
             this.VersionField.Visible = true;
-            
         }
 
         private void tabPage5_MouseHover(object sender, EventArgs e)
         {
-            
             this.VersionField.Text = versionTxT;
             this.VersionField.Visible = true;
         }
@@ -138,6 +139,33 @@ namespace URIdreieckGUI
         {
             this.VersionField.Text = versionTxT;
             this.VersionField.Visible = true;
+        }
+
+        private void rb3_CheckedChanged(object sender, EventArgs e)
+        {
+            this.tb1.Enabled = true;
+            this.tb2.Enabled = true;
+            //          this.tb3.Enabled = true;
+            this.tb4.Enabled = false;
+            tb4.Clear();
+        }
+
+        private void rb2_CheckedChanged(object sender, EventArgs e)
+        {
+            this.tb1.Enabled = true;
+            this.tb2.Enabled = false;
+            //          this.tb3.Enabled = true;
+            this.tb4.Enabled = true;
+            tb2.Clear();
+        }
+
+        private void rb1_CheckedChanged(object sender, EventArgs e)
+        {
+            this.tb1.Enabled = false;
+            this.tb2.Enabled = true;
+            //          this.tb3.Enabled = true;
+            this.tb4.Enabled = true;
+            tb1.Clear();
         }
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -149,7 +177,6 @@ namespace URIdreieckGUI
             this.vFf.Text = aDvFfe.ToString();
         }
 
- 
         private void vFc_TextChanged(object sender, EventArgs e)
         {
             try
@@ -165,7 +192,7 @@ namespace URIdreieckGUI
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
         //  Tab4    -   Gewitter
-   
+
         private void vGt_TextChanged(object sender, EventArgs e)
         {
             {
@@ -286,6 +313,10 @@ namespace URIdreieckGUI
             rb1.Checked = false;
             rb2.Checked = false;
             rb3.Checked = false;
+            tb1.Enabled = true;
+            tb2.Enabled = true;
+            //          this.tb3.Enabled = true;
+            tb4.Enabled = true;
             //  Tab 2 - Clear
             vGRA1.Clear();
             vGRA2.Clear();

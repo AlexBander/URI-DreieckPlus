@@ -20,17 +20,7 @@
             base.Dispose(disposing);
         }
 
-        private void moreComponents()
-        {
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(150, 323);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(41, 13);
-            this.label25.TabIndex = 18;
-            this.label25.Text = versionTxT;
-        }
-
-    #region Vom Windows Form-Designer generierter Code
+     #region Vom Windows Form-Designer generierter Code
 
     /// <summary>
     /// Erforderliche Methode für die Designerunterstützung.
@@ -39,7 +29,6 @@
     private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(URIForm));
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
@@ -48,16 +37,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.vEe = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.tb3 = new System.Windows.Forms.TextBox();
             this.rb3 = new System.Windows.Forms.RadioButton();
+            this.tb1 = new System.Windows.Forms.TextBox();
             this.rb2 = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.rb1 = new System.Windows.Forms.RadioButton();
+            this.tb2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tb4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.tb3 = new System.Windows.Forms.TextBox();
-            this.tb2 = new System.Windows.Forms.TextBox();
-            this.tb1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -105,11 +95,12 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label24 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.VersionField = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label25 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -163,20 +154,20 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.vEe);
             this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.tb3);
             this.tabPage1.Controls.Add(this.rb3);
+            this.tabPage1.Controls.Add(this.tb1);
             this.tabPage1.Controls.Add(this.rb2);
+            this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.rb1);
+            this.tabPage1.Controls.Add(this.tb2);
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.tb4);
             this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.tb3);
-            this.tabPage1.Controls.Add(this.tb2);
-            this.tabPage1.Controls.Add(this.tb1);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -188,16 +179,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(140, 147);
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Location = new System.Drawing.Point(149, 162);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 13);
+            this.label5.Size = new System.Drawing.Size(26, 15);
             this.label5.TabIndex = 28;
-            this.label5.Text = "Ziel Auswahl:";
+            this.label5.Text = "Ziel";
             // 
             // vEe
             // 
             this.vEe.AutoSize = true;
-            this.vEe.Location = new System.Drawing.Point(409, 83);
+            this.vEe.Location = new System.Drawing.Point(219, 40);
             this.vEe.Name = "vEe";
             this.vEe.Size = new System.Drawing.Size(48, 13);
             this.vEe.TabIndex = 27;
@@ -206,61 +198,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(243, 84);
+            this.label4.Location = new System.Drawing.Point(15, 39);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 26;
             this.label4.Text = "Ergebnis: ";
-            // 
-            // rb3
-            // 
-            this.rb3.AutoSize = true;
-            this.rb3.Location = new System.Drawing.Point(195, 163);
-            this.rb3.Name = "rb3";
-            this.rb3.Size = new System.Drawing.Size(74, 17);
-            this.rb3.TabIndex = 24;
-            this.rb3.TabStop = true;
-            this.rb3.Text = "Spannung";
-            this.rb3.UseVisualStyleBackColor = true;
-            // 
-            // rb2
-            // 
-            this.rb2.AutoSize = true;
-            this.rb2.Location = new System.Drawing.Point(158, 127);
-            this.rb2.Name = "rb2";
-            this.rb2.Size = new System.Drawing.Size(52, 17);
-            this.rb2.TabIndex = 22;
-            this.rb2.TabStop = true;
-            this.rb2.Text = "Strom";
-            this.rb2.UseVisualStyleBackColor = true;
-            // 
-            // rb1
-            // 
-            this.rb1.AutoSize = true;
-            this.rb1.Location = new System.Drawing.Point(110, 163);
-            this.rb1.Name = "rb1";
-            this.rb1.Size = new System.Drawing.Size(79, 17);
-            this.rb1.TabIndex = 21;
-            this.rb1.TabStop = true;
-            this.rb1.Text = "Widerstand";
-            this.rb1.UseVisualStyleBackColor = true;
-            // 
-            // tb4
-            // 
-            this.tb4.Location = new System.Drawing.Point(146, 99);
-            this.tb4.Name = "tb4";
-            this.tb4.Size = new System.Drawing.Size(46, 20);
-            this.tb4.TabIndex = 20;
-            this.tb4.TextChanged += new System.EventHandler(this.tb4_TextChanged_1);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(134, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Spannung (U):";
             // 
             // tb3
             // 
@@ -270,45 +212,115 @@
             this.tb3.Enabled = false;
             this.tb3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
             this.tb3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.tb3.Location = new System.Drawing.Point(303, 83);
+            this.tb3.Location = new System.Drawing.Point(113, 39);
             this.tb3.Name = "tb3";
             this.tb3.Size = new System.Drawing.Size(100, 16);
             this.tb3.TabIndex = 23;
             this.tb3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tb2
+            // rb3
             // 
-            this.tb2.Location = new System.Drawing.Point(222, 185);
-            this.tb2.Name = "tb2";
-            this.tb2.Size = new System.Drawing.Size(47, 20);
-            this.tb2.TabIndex = 18;
-            this.tb2.TextChanged += new System.EventHandler(this.tb2_TextChanged_1);
+            this.rb3.AutoSize = true;
+            this.rb3.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rb3.Location = new System.Drawing.Point(133, 124);
+            this.rb3.Name = "rb3";
+            this.rb3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.rb3.Size = new System.Drawing.Size(60, 30);
+            this.rb3.TabIndex = 24;
+            this.rb3.TabStop = true;
+            this.rb3.Text = "Spannung";
+            this.rb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rb3.UseVisualStyleBackColor = true;
+            this.rb3.CheckedChanged += new System.EventHandler(this.rb3_CheckedChanged);
             // 
             // tb1
             // 
-            this.tb1.Location = new System.Drawing.Point(84, 185);
+            this.tb1.Location = new System.Drawing.Point(50, 184);
             this.tb1.Name = "tb1";
-            this.tb1.Size = new System.Drawing.Size(35, 20);
+            this.tb1.Size = new System.Drawing.Size(72, 20);
             this.tb1.TabIndex = 16;
+            this.tb1.UseWaitCursor = true;
             this.tb1.TextChanged += new System.EventHandler(this.tb1_TextChanged_1);
+            // 
+            // rb2
+            // 
+            this.rb2.AutoSize = true;
+            this.rb2.Location = new System.Drawing.Point(181, 160);
+            this.rb2.Name = "rb2";
+            this.rb2.Size = new System.Drawing.Size(52, 17);
+            this.rb2.TabIndex = 22;
+            this.rb2.TabStop = true;
+            this.rb2.Text = "Strom";
+            this.rb2.UseVisualStyleBackColor = true;
+            this.rb2.CheckedChanged += new System.EventHandler(this.rb2_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(221, 208);
+            this.label2.Location = new System.Drawing.Point(215, 207);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Strom (I): ";
+            this.label2.Text = "Strom (I)";
+            // 
+            // rb1
+            // 
+            this.rb1.AutoSize = true;
+            this.rb1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rb1.Location = new System.Drawing.Point(64, 160);
+            this.rb1.Name = "rb1";
+            this.rb1.Size = new System.Drawing.Size(79, 17);
+            this.rb1.TabIndex = 21;
+            this.rb1.TabStop = true;
+            this.rb1.Text = "Widerstand";
+            this.rb1.UseVisualStyleBackColor = true;
+            this.rb1.CheckedChanged += new System.EventHandler(this.rb1_CheckedChanged);
+            // 
+            // tb2
+            // 
+            this.tb2.Location = new System.Drawing.Point(204, 184);
+            this.tb2.Name = "tb2";
+            this.tb2.Size = new System.Drawing.Size(70, 20);
+            this.tb2.TabIndex = 18;
+            this.tb2.UseWaitCursor = true;
+            this.tb2.TextChanged += new System.EventHandler(this.tb2_TextChanged_1);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 208);
+            this.label1.Location = new System.Drawing.Point(47, 207);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Widerstand (R): ";
+            this.label1.Text = "Widerstand (R) ";
+            // 
+            // tb4
+            // 
+            this.tb4.Location = new System.Drawing.Point(127, 101);
+            this.tb4.Name = "tb4";
+            this.tb4.Size = new System.Drawing.Size(73, 20);
+            this.tb4.TabIndex = 20;
+            this.tb4.UseWaitCursor = true;
+            this.tb4.TextChanged += new System.EventHandler(this.tb4_TextChanged_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(124, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Spannung (U):";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::URIdreieckGUI.Properties.Resources.URI3_01;
+            this.pictureBox1.InitialImage = global::URIdreieckGUI.Properties.Resources.URI3_01;
+            this.pictureBox1.Location = new System.Drawing.Point(-4, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(334, 254);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // tabPage2
             // 
@@ -773,6 +785,7 @@
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.textBox2);
+            this.tabPage5.Controls.Add(this.VersionField);
             this.tabPage5.Controls.Add(this.splitContainer1);
             this.tabPage5.Controls.Add(this.label24);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
@@ -807,31 +820,33 @@
             this.label24.TabIndex = 0;
             this.label24.Text = "label24";
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(158, 323);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(42, 13);
+            this.label26.TabIndex = 29;
+            this.label26.Text = "Version";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // VersionField
             // 
             this.VersionField.AutoSize = true;
-            this.VersionField.Location = new System.Drawing.Point(12, 9);
+            this.VersionField.Location = new System.Drawing.Point(15, 18);
             this.VersionField.Name = "VersionField";
             this.VersionField.Size = new System.Drawing.Size(42, 13);
             this.VersionField.TabIndex = 3;
             this.VersionField.Text = "Version";
             this.VersionField.Visible = false;
             // 
-            // label25
-            // 
-            this.label25.Location = new System.Drawing.Point(0, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(100, 23);
-            this.label25.TabIndex = 0;
-            // 
             // URIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 348);
+            this.ClientSize = new System.Drawing.Size(477, 348);
             this.ControlBox = false;
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.VersionField);
+            this.Controls.Add(this.label26);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
@@ -845,6 +860,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -867,19 +883,9 @@
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label vEe;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton rb3;
-        private System.Windows.Forms.RadioButton rb2;
-        private System.Windows.Forms.RadioButton rb1;
-        private System.Windows.Forms.TextBox tb4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb3;
-        private System.Windows.Forms.TextBox tb2;
-        private System.Windows.Forms.TextBox tb1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox vGRA2;
         private System.Windows.Forms.TextBox vGRA1;
@@ -929,7 +935,19 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label Warnung;
         private System.Windows.Forms.Label VersionField;
-        private System.Windows.Forms.Label label25;
+  //      private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RadioButton rb3;
+        private System.Windows.Forms.TextBox tb1;
+        private System.Windows.Forms.RadioButton rb2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton rb1;
+        private System.Windows.Forms.TextBox tb2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label26;
     }
 }
 
