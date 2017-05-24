@@ -20,7 +20,17 @@
             base.Dispose(disposing);
         }
 
-     #region Vom Windows Form-Designer generierter Code
+        private void moreComponents()
+        {
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(150, 323);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(41, 13);
+            this.label25.TabIndex = 18;
+            this.label25.Text = versionTxT;
+        }
+
+    #region Vom Windows Form-Designer generierter Code
 
     /// <summary>
     /// Erforderliche Methode für die Designerunterstützung.
@@ -32,22 +42,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(URIForm));
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
-            this.Base64 = new System.Windows.Forms.TabControl();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.vEe = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tb3 = new System.Windows.Forms.TextBox();
             this.rb3 = new System.Windows.Forms.RadioButton();
-            this.tb1 = new System.Windows.Forms.TextBox();
             this.rb2 = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.rb1 = new System.Windows.Forms.RadioButton();
-            this.tb2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tb4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tb3 = new System.Windows.Forms.TextBox();
+            this.tb2 = new System.Windows.Forms.TextBox();
+            this.tb1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -93,41 +103,19 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.VersionField = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label24 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.enCodeBase64 = new System.Windows.Forms.GroupBox();
-            this.copyBase64 = new System.Windows.Forms.Button();
-            this.pastEnBase64 = new System.Windows.Forms.Button();
-            this.btResetEnBase64 = new System.Windows.Forms.Button();
-            this.tbOutEnBase64 = new System.Windows.Forms.TextBox();
-            this.tbInEnBase64 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.btEnBase64 = new System.Windows.Forms.Button();
-            this.deCodeBase64 = new System.Windows.Forms.GroupBox();
-            this.pastIN = new System.Windows.Forms.Button();
-            this.decodeReset = new System.Windows.Forms.Button();
-            this.outBase64 = new System.Windows.Forms.TextBox();
-            this.inputBase64 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.deCodeB64 = new System.Windows.Forms.Button();
-            this.label26 = new System.Windows.Forms.Label();
+            this.VersionField = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btn3 = new System.Windows.Forms.Button();
-            this.copyText = new System.Windows.Forms.Button();
-            this.Base64.SuspendLayout();
+            this.label25 = new System.Windows.Forms.Label();
+            this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.enCodeBase64.SuspendLayout();
-            this.deCodeBase64.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn1
@@ -150,36 +138,45 @@
             this.btn2.UseVisualStyleBackColor = true;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
-            // Base64
+            // btn3
             // 
-            this.Base64.Controls.Add(this.tabPage1);
-            this.Base64.Controls.Add(this.tabPage2);
-            this.Base64.Controls.Add(this.tabPage3);
-            this.Base64.Controls.Add(this.tabPage4);
-            this.Base64.Controls.Add(this.tabPage5);
-            this.Base64.Controls.Add(this.tabPage6);
-            this.Base64.Location = new System.Drawing.Point(2, 35);
-            this.Base64.Name = "Base64";
-            this.Base64.SelectedIndex = 0;
-            this.Base64.Size = new System.Drawing.Size(471, 276);
-            this.Base64.TabIndex = 17;
+            this.btn3.Location = new System.Drawing.Point(391, 12);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(75, 23);
+            this.btn3.TabIndex = 8;
+            this.btn3.Text = "Schließen";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Location = new System.Drawing.Point(2, 35);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(471, 276);
+            this.tabControl1.TabIndex = 17;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.vEe);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.tb3);
             this.tabPage1.Controls.Add(this.rb3);
-            this.tabPage1.Controls.Add(this.tb1);
             this.tabPage1.Controls.Add(this.rb2);
-            this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.rb1);
-            this.tabPage1.Controls.Add(this.tb2);
-            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.tb4);
             this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.pictureBox1);
+            this.tabPage1.Controls.Add(this.tb3);
+            this.tabPage1.Controls.Add(this.tb2);
+            this.tabPage1.Controls.Add(this.tb1);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -191,17 +188,16 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Location = new System.Drawing.Point(149, 162);
+            this.label5.Location = new System.Drawing.Point(140, 147);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 15);
+            this.label5.Size = new System.Drawing.Size(70, 13);
             this.label5.TabIndex = 28;
-            this.label5.Text = "Ziel";
+            this.label5.Text = "Ziel Auswahl:";
             // 
             // vEe
             // 
             this.vEe.AutoSize = true;
-            this.vEe.Location = new System.Drawing.Point(219, 40);
+            this.vEe.Location = new System.Drawing.Point(409, 83);
             this.vEe.Name = "vEe";
             this.vEe.Size = new System.Drawing.Size(48, 13);
             this.vEe.TabIndex = 27;
@@ -210,11 +206,61 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 39);
+            this.label4.Location = new System.Drawing.Point(243, 84);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 26;
             this.label4.Text = "Ergebnis: ";
+            // 
+            // rb3
+            // 
+            this.rb3.AutoSize = true;
+            this.rb3.Location = new System.Drawing.Point(195, 163);
+            this.rb3.Name = "rb3";
+            this.rb3.Size = new System.Drawing.Size(74, 17);
+            this.rb3.TabIndex = 24;
+            this.rb3.TabStop = true;
+            this.rb3.Text = "Spannung";
+            this.rb3.UseVisualStyleBackColor = true;
+            // 
+            // rb2
+            // 
+            this.rb2.AutoSize = true;
+            this.rb2.Location = new System.Drawing.Point(158, 127);
+            this.rb2.Name = "rb2";
+            this.rb2.Size = new System.Drawing.Size(52, 17);
+            this.rb2.TabIndex = 22;
+            this.rb2.TabStop = true;
+            this.rb2.Text = "Strom";
+            this.rb2.UseVisualStyleBackColor = true;
+            // 
+            // rb1
+            // 
+            this.rb1.AutoSize = true;
+            this.rb1.Location = new System.Drawing.Point(110, 163);
+            this.rb1.Name = "rb1";
+            this.rb1.Size = new System.Drawing.Size(79, 17);
+            this.rb1.TabIndex = 21;
+            this.rb1.TabStop = true;
+            this.rb1.Text = "Widerstand";
+            this.rb1.UseVisualStyleBackColor = true;
+            // 
+            // tb4
+            // 
+            this.tb4.Location = new System.Drawing.Point(146, 99);
+            this.tb4.Name = "tb4";
+            this.tb4.Size = new System.Drawing.Size(46, 20);
+            this.tb4.TabIndex = 20;
+            this.tb4.TextChanged += new System.EventHandler(this.tb4_TextChanged_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(134, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Spannung (U):";
             // 
             // tb3
             // 
@@ -224,115 +270,45 @@
             this.tb3.Enabled = false;
             this.tb3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
             this.tb3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.tb3.Location = new System.Drawing.Point(113, 39);
+            this.tb3.Location = new System.Drawing.Point(303, 83);
             this.tb3.Name = "tb3";
             this.tb3.Size = new System.Drawing.Size(100, 16);
             this.tb3.TabIndex = 23;
             this.tb3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // rb3
+            // tb2
             // 
-            this.rb3.AutoSize = true;
-            this.rb3.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.rb3.Location = new System.Drawing.Point(133, 124);
-            this.rb3.Name = "rb3";
-            this.rb3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rb3.Size = new System.Drawing.Size(60, 30);
-            this.rb3.TabIndex = 24;
-            this.rb3.TabStop = true;
-            this.rb3.Text = "Spannung";
-            this.rb3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rb3.UseVisualStyleBackColor = true;
-            this.rb3.CheckedChanged += new System.EventHandler(this.rb3_CheckedChanged);
+            this.tb2.Location = new System.Drawing.Point(222, 185);
+            this.tb2.Name = "tb2";
+            this.tb2.Size = new System.Drawing.Size(47, 20);
+            this.tb2.TabIndex = 18;
+            this.tb2.TextChanged += new System.EventHandler(this.tb2_TextChanged_1);
             // 
             // tb1
             // 
-            this.tb1.Location = new System.Drawing.Point(50, 184);
+            this.tb1.Location = new System.Drawing.Point(84, 185);
             this.tb1.Name = "tb1";
-            this.tb1.Size = new System.Drawing.Size(72, 20);
+            this.tb1.Size = new System.Drawing.Size(35, 20);
             this.tb1.TabIndex = 16;
-            this.tb1.UseWaitCursor = true;
             this.tb1.TextChanged += new System.EventHandler(this.tb1_TextChanged_1);
-            // 
-            // rb2
-            // 
-            this.rb2.AutoSize = true;
-            this.rb2.Location = new System.Drawing.Point(181, 160);
-            this.rb2.Name = "rb2";
-            this.rb2.Size = new System.Drawing.Size(52, 17);
-            this.rb2.TabIndex = 22;
-            this.rb2.TabStop = true;
-            this.rb2.Text = "Strom";
-            this.rb2.UseVisualStyleBackColor = true;
-            this.rb2.CheckedChanged += new System.EventHandler(this.rb2_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(215, 207);
+            this.label2.Location = new System.Drawing.Point(221, 208);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Strom (I)";
-            // 
-            // rb1
-            // 
-            this.rb1.AutoSize = true;
-            this.rb1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rb1.Location = new System.Drawing.Point(64, 160);
-            this.rb1.Name = "rb1";
-            this.rb1.Size = new System.Drawing.Size(79, 17);
-            this.rb1.TabIndex = 21;
-            this.rb1.TabStop = true;
-            this.rb1.Text = "Widerstand";
-            this.rb1.UseVisualStyleBackColor = true;
-            this.rb1.CheckedChanged += new System.EventHandler(this.rb1_CheckedChanged);
-            // 
-            // tb2
-            // 
-            this.tb2.Location = new System.Drawing.Point(204, 184);
-            this.tb2.Name = "tb2";
-            this.tb2.Size = new System.Drawing.Size(70, 20);
-            this.tb2.TabIndex = 18;
-            this.tb2.UseWaitCursor = true;
-            this.tb2.TextChanged += new System.EventHandler(this.tb2_TextChanged_1);
+            this.label2.Text = "Strom (I): ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 207);
+            this.label1.Location = new System.Drawing.Point(64, 208);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Widerstand (R) ";
-            // 
-            // tb4
-            // 
-            this.tb4.Location = new System.Drawing.Point(127, 101);
-            this.tb4.Name = "tb4";
-            this.tb4.Size = new System.Drawing.Size(73, 20);
-            this.tb4.TabIndex = 20;
-            this.tb4.UseWaitCursor = true;
-            this.tb4.TextChanged += new System.EventHandler(this.tb4_TextChanged_1);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(124, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Spannung (U):";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::URIdreieckGUI.Properties.Resources.URI3_01;
-            this.pictureBox1.InitialImage = global::URIdreieckGUI.Properties.Resources.URI3_01;
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(334, 254);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
+            this.label1.Text = "Widerstand (R): ";
             // 
             // tabPage2
             // 
@@ -797,7 +773,6 @@
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.textBox2);
-            this.tabPage5.Controls.Add(this.VersionField);
             this.tabPage5.Controls.Add(this.splitContainer1);
             this.tabPage5.Controls.Add(this.label24);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
@@ -816,16 +791,6 @@
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 2;
             // 
-            // VersionField
-            // 
-            this.VersionField.AutoSize = true;
-            this.VersionField.Location = new System.Drawing.Point(15, 18);
-            this.VersionField.Name = "VersionField";
-            this.VersionField.Size = new System.Drawing.Size(42, 13);
-            this.VersionField.TabIndex = 3;
-            this.VersionField.Text = "Version";
-            this.VersionField.Visible = false;
-            // 
             // splitContainer1
             // 
             this.splitContainer1.Location = new System.Drawing.Point(44, 115);
@@ -842,248 +807,44 @@
             this.label24.TabIndex = 0;
             this.label24.Text = "label24";
             // 
-            // tabPage6
+            // VersionField
             // 
-            this.tabPage6.Controls.Add(this.enCodeBase64);
-            this.tabPage6.Controls.Add(this.deCodeBase64);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(463, 250);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Base64";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // enCodeBase64
-            // 
-            this.enCodeBase64.Controls.Add(this.copyBase64);
-            this.enCodeBase64.Controls.Add(this.pastEnBase64);
-            this.enCodeBase64.Controls.Add(this.btResetEnBase64);
-            this.enCodeBase64.Controls.Add(this.tbOutEnBase64);
-            this.enCodeBase64.Controls.Add(this.tbInEnBase64);
-            this.enCodeBase64.Controls.Add(this.label27);
-            this.enCodeBase64.Controls.Add(this.btEnBase64);
-            this.enCodeBase64.Location = new System.Drawing.Point(7, 127);
-            this.enCodeBase64.Name = "enCodeBase64";
-            this.enCodeBase64.Size = new System.Drawing.Size(450, 114);
-            this.enCodeBase64.TabIndex = 7;
-            this.enCodeBase64.TabStop = false;
-            this.enCodeBase64.Text = "EnCode Base64";
-            // 
-            // copyBase64
-            // 
-            this.copyBase64.BackgroundImage = global::URIdreieckGUI.Properties.Resources.copy;
-            this.copyBase64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.copyBase64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.copyBase64.ForeColor = System.Drawing.Color.Transparent;
-            this.copyBase64.Location = new System.Drawing.Point(409, 57);
-            this.copyBase64.Name = "copyBase64";
-            this.copyBase64.Size = new System.Drawing.Size(31, 24);
-            this.copyBase64.TabIndex = 7;
-            this.copyBase64.UseVisualStyleBackColor = true;
-            this.copyBase64.Click += new System.EventHandler(this.copyBase64_Click);
-            // 
-            // pastEnBase64
-            // 
-            this.pastEnBase64.BackgroundImage = global::URIdreieckGUI.Properties.Resources.past;
-            this.pastEnBase64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pastEnBase64.FlatAppearance.BorderSize = 0;
-            this.pastEnBase64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pastEnBase64.ForeColor = System.Drawing.Color.Transparent;
-            this.pastEnBase64.Location = new System.Drawing.Point(415, 19);
-            this.pastEnBase64.Name = "pastEnBase64";
-            this.pastEnBase64.Size = new System.Drawing.Size(25, 21);
-            this.pastEnBase64.TabIndex = 6;
-            this.pastEnBase64.UseVisualStyleBackColor = true;
-            this.pastEnBase64.Click += new System.EventHandler(this.pastEnBase64_Click);
-            // 
-            // btResetEnBase64
-            // 
-            this.btResetEnBase64.Location = new System.Drawing.Point(362, 87);
-            this.btResetEnBase64.Name = "btResetEnBase64";
-            this.btResetEnBase64.Size = new System.Drawing.Size(47, 23);
-            this.btResetEnBase64.TabIndex = 4;
-            this.btResetEnBase64.Text = "Reset";
-            this.btResetEnBase64.UseVisualStyleBackColor = true;
-            this.btResetEnBase64.Click += new System.EventHandler(this.btResetEnBase64_Click);
-            // 
-            // tbOutEnBase64
-            // 
-            this.tbOutEnBase64.Location = new System.Drawing.Point(37, 46);
-            this.tbOutEnBase64.Multiline = true;
-            this.tbOutEnBase64.Name = "tbOutEnBase64";
-            this.tbOutEnBase64.ReadOnly = true;
-            this.tbOutEnBase64.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbOutEnBase64.Size = new System.Drawing.Size(372, 35);
-            this.tbOutEnBase64.TabIndex = 3;
-            // 
-            // tbInEnBase64
-            // 
-            this.tbInEnBase64.AcceptsReturn = true;
-            this.tbInEnBase64.AllowDrop = true;
-            this.tbInEnBase64.Location = new System.Drawing.Point(37, 20);
-            this.tbInEnBase64.Name = "tbInEnBase64";
-            this.tbInEnBase64.Size = new System.Drawing.Size(372, 20);
-            this.tbInEnBase64.TabIndex = 2;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(-1, 23);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(34, 13);
-            this.label27.TabIndex = 1;
-            this.label27.Text = "String";
-            // 
-            // btEnBase64
-            // 
-            this.btEnBase64.Location = new System.Drawing.Point(174, 87);
-            this.btEnBase64.Name = "btEnBase64";
-            this.btEnBase64.Size = new System.Drawing.Size(75, 23);
-            this.btEnBase64.TabIndex = 0;
-            this.btEnBase64.Text = "Encodeing";
-            this.btEnBase64.UseVisualStyleBackColor = true;
-            this.btEnBase64.Click += new System.EventHandler(this.btEnBase64_Click);
-            // 
-            // deCodeBase64
-            // 
-            this.deCodeBase64.Controls.Add(this.copyText);
-            this.deCodeBase64.Controls.Add(this.pastIN);
-            this.deCodeBase64.Controls.Add(this.decodeReset);
-            this.deCodeBase64.Controls.Add(this.outBase64);
-            this.deCodeBase64.Controls.Add(this.inputBase64);
-            this.deCodeBase64.Controls.Add(this.label25);
-            this.deCodeBase64.Controls.Add(this.deCodeB64);
-            this.deCodeBase64.Location = new System.Drawing.Point(7, 7);
-            this.deCodeBase64.Name = "deCodeBase64";
-            this.deCodeBase64.Size = new System.Drawing.Size(450, 114);
-            this.deCodeBase64.TabIndex = 1;
-            this.deCodeBase64.TabStop = false;
-            this.deCodeBase64.Text = "DeCode Base64";
-            // 
-            // pastIN
-            // 
-            this.pastIN.BackgroundImage = global::URIdreieckGUI.Properties.Resources.past;
-            this.pastIN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pastIN.FlatAppearance.BorderSize = 0;
-            this.pastIN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pastIN.ForeColor = System.Drawing.Color.Transparent;
-            this.pastIN.Location = new System.Drawing.Point(415, 18);
-            this.pastIN.Name = "pastIN";
-            this.pastIN.Size = new System.Drawing.Size(25, 22);
-            this.pastIN.TabIndex = 6;
-            this.pastIN.UseVisualStyleBackColor = true;
-            this.pastIN.Click += new System.EventHandler(this.pastIN_Click);
-            // 
-            // decodeReset
-            // 
-            this.decodeReset.Location = new System.Drawing.Point(362, 87);
-            this.decodeReset.Name = "decodeReset";
-            this.decodeReset.Size = new System.Drawing.Size(47, 23);
-            this.decodeReset.TabIndex = 4;
-            this.decodeReset.Text = "Reset";
-            this.decodeReset.UseVisualStyleBackColor = true;
-            this.decodeReset.Click += new System.EventHandler(this.decodeReset_Click);
-            // 
-            // outBase64
-            // 
-            this.outBase64.Location = new System.Drawing.Point(37, 46);
-            this.outBase64.Multiline = true;
-            this.outBase64.Name = "outBase64";
-            this.outBase64.ReadOnly = true;
-            this.outBase64.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.outBase64.Size = new System.Drawing.Size(372, 35);
-            this.outBase64.TabIndex = 3;
-            // 
-            // inputBase64
-            // 
-            this.inputBase64.AcceptsReturn = true;
-            this.inputBase64.AllowDrop = true;
-            this.inputBase64.Location = new System.Drawing.Point(37, 20);
-            this.inputBase64.Name = "inputBase64";
-            this.inputBase64.Size = new System.Drawing.Size(372, 20);
-            this.inputBase64.TabIndex = 2;
+            this.VersionField.AutoSize = true;
+            this.VersionField.Location = new System.Drawing.Point(12, 9);
+            this.VersionField.Name = "VersionField";
+            this.VersionField.Size = new System.Drawing.Size(42, 13);
+            this.VersionField.TabIndex = 3;
+            this.VersionField.Text = "Version";
+            this.VersionField.Visible = false;
             // 
             // label25
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(-1, 23);
+            this.label25.Location = new System.Drawing.Point(0, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(34, 13);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "String";
-            // 
-            // deCodeB64
-            // 
-            this.deCodeB64.Location = new System.Drawing.Point(174, 87);
-            this.deCodeB64.Name = "deCodeB64";
-            this.deCodeB64.Size = new System.Drawing.Size(75, 23);
-            this.deCodeB64.TabIndex = 0;
-            this.deCodeB64.Text = "Decodeing";
-            this.deCodeB64.UseVisualStyleBackColor = true;
-            this.deCodeB64.Click += new System.EventHandler(this.deCodeB64_Click);
-            // 
-            // label26
-            // 
-            this.label26.Location = new System.Drawing.Point(150, 311);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(199, 37);
-            this.label26.TabIndex = 29;
-            this.label26.Text = "Version";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btn3
-            // 
-            this.btn3.BackColor = System.Drawing.Color.Transparent;
-            this.btn3.BackgroundImage = global::URIdreieckGUI.Properties.Resources.onoff;
-            this.btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn3.FlatAppearance.BorderSize = 0;
-            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn3.Location = new System.Drawing.Point(443, 4);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(30, 25);
-            this.btn3.TabIndex = 8;
-            this.btn3.UseVisualStyleBackColor = false;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
-            // 
-            // copyText
-            // 
-            this.copyText.BackgroundImage = global::URIdreieckGUI.Properties.Resources.copy;
-            this.copyText.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.copyText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.copyText.ForeColor = System.Drawing.Color.Transparent;
-            this.copyText.Location = new System.Drawing.Point(409, 57);
-            this.copyText.Name = "copyText";
-            this.copyText.Size = new System.Drawing.Size(31, 24);
-            this.copyText.TabIndex = 8;
-            this.copyText.UseVisualStyleBackColor = true;
-            this.copyText.Click += new System.EventHandler(this.copyText_Click);
+            this.label25.Size = new System.Drawing.Size(100, 23);
+            this.label25.TabIndex = 0;
             // 
             // URIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 348);
+            this.ClientSize = new System.Drawing.Size(479, 348);
             this.ControlBox = false;
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.Base64);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.VersionField);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "URIForm";
-            this.Opacity = 0.95D;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "AllTool - FISI Winter 2015 C#-Projekt";
-            this.TopMost = true;
+            this.Text = "Übungsaufgaben - 01 EBAS - FISI Winter 2015";
             this.Load += new System.EventHandler(this.URIForm_Load);
-            this.Base64.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -1094,12 +855,8 @@
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.enCodeBase64.ResumeLayout(false);
-            this.enCodeBase64.PerformLayout();
-            this.deCodeBase64.ResumeLayout(false);
-            this.deCodeBase64.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1108,11 +865,21 @@
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
-        private System.Windows.Forms.TabControl Base64;
+        private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label vEe;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RadioButton rb3;
+        private System.Windows.Forms.RadioButton rb2;
+        private System.Windows.Forms.RadioButton rb1;
+        private System.Windows.Forms.TextBox tb4;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb3;
+        private System.Windows.Forms.TextBox tb2;
+        private System.Windows.Forms.TextBox tb1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox vGRA2;
         private System.Windows.Forms.TextBox vGRA1;
@@ -1162,36 +929,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label Warnung;
         private System.Windows.Forms.Label VersionField;
-  //      private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RadioButton rb3;
-        private System.Windows.Forms.TextBox tb1;
-        private System.Windows.Forms.RadioButton rb2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton rb1;
-        private System.Windows.Forms.TextBox tb2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tb4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.GroupBox deCodeBase64;
-        private System.Windows.Forms.TextBox outBase64;
-        private System.Windows.Forms.TextBox inputBase64;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Button deCodeB64;
-        private System.Windows.Forms.Button decodeReset;
-        private System.Windows.Forms.Button pastIN;
-        private System.Windows.Forms.GroupBox enCodeBase64;
-        private System.Windows.Forms.Button pastEnBase64;
-        private System.Windows.Forms.Button btResetEnBase64;
-        private System.Windows.Forms.TextBox tbOutEnBase64;
-        private System.Windows.Forms.TextBox tbInEnBase64;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button btEnBase64;
-        private System.Windows.Forms.Button copyBase64;
-        private System.Windows.Forms.Button copyText;
     }
 }
 

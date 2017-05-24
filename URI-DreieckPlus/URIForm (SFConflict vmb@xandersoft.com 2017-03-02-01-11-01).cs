@@ -8,25 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace URIdreieckGUI
 {
     public partial class URIForm : Form
     {
+
         public URIForm()
         {
             InitializeComponent();
-            //            moreComponents();
-            //            test(label26);
-            test(label26);
+            moreComponents();
         }
 
-        public string versionNum = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-        internal string versionTxT = $"Created by AlexB - 2015 - v.";
-
-        internal void test(Label a)
-        {
-            a.Text = $"{versionTxT}{versionNum }";
-        }
+   
+        private string versionTxT = $"Created by AlexB - 2015 - v.{ System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString() }";
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%% U-R-I - Deklare %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -128,10 +124,12 @@ namespace URIdreieckGUI
         {
             this.VersionField.Text = versionTxT;
             this.VersionField.Visible = true;
+            
         }
 
         private void tabPage5_MouseHover(object sender, EventArgs e)
         {
+            
             this.VersionField.Text = versionTxT;
             this.VersionField.Visible = true;
         }
@@ -142,88 +140,6 @@ namespace URIdreieckGUI
             this.VersionField.Visible = true;
         }
 
-        private void rb3_CheckedChanged(object sender, EventArgs e)
-        {
-            this.tb1.Enabled = true;
-            this.tb2.Enabled = true;
-            //          this.tb3.Enabled = true;
-            this.tb4.Enabled = false;
-            tb4.Clear();
-        }
-
-        private void rb2_CheckedChanged(object sender, EventArgs e)
-        {
-            this.tb1.Enabled = true;
-            this.tb2.Enabled = false;
-            //          this.tb3.Enabled = true;
-            this.tb4.Enabled = true;
-            tb2.Clear();
-        }
-
-        private void rb1_CheckedChanged(object sender, EventArgs e)
-        {
-            this.tb1.Enabled = false;
-            this.tb2.Enabled = true;
-            //          this.tb3.Enabled = true;
-            this.tb4.Enabled = true;
-            tb1.Clear();
-        }
-
-        private void deCodeB64_Click(object sender, EventArgs e)
-        {
-            try
-            { 
-                byte[] data = Convert.FromBase64String(inputBase64.Text);
-                string decodedString = Encoding.UTF8.GetString(data);
-                outBase64.Text = decodedString;
-            }
-            catch { MessageBox.Show("Not convertible!");}
-        }
-
-        private void decodeReset_Click(object sender, EventArgs e)
-        {
-            inputBase64.Clear();
-            outBase64.Clear();
-        }
-
-        private void pastIN_Click(object sender, EventArgs e)
-        {
-            inputBase64.Text += Clipboard.GetText();
-        }
-
-        private void pastEnBase64_Click(object sender, EventArgs e)
-        {
-            tbInEnBase64.Text += Clipboard.GetText();
-        }
-
-        private void btEnBase64_Click(object sender, EventArgs e)
-        {
-            tbOutEnBase64.Text = Base64Encode(tbInEnBase64.Text);        
-        }
-
-        public static string Base64Encode(string plainText)
-        {
-            byte[] byteText = Encoding.UTF8.GetBytes(plainText);
-            return Convert.ToBase64String(byteText);
-        }
-
-        private void btResetEnBase64_Click(object sender, EventArgs e)
-        {
-            tbInEnBase64.Clear();
-            tbOutEnBase64.Clear();
-        }
-
-        private void copyBase64_Click(object sender, EventArgs e)
-        {
-            Clipboard.SetText(tbOutEnBase64.Text);
-        }
-
-        private void copyText_Click(object sender, EventArgs e)
-        {
-            Clipboard.SetText(outBase64.Text);
-        }
-
-
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
         //  Tab 3   -   Fahrenheit
@@ -233,6 +149,7 @@ namespace URIdreieckGUI
             this.vFf.Text = aDvFfe.ToString();
         }
 
+ 
         private void vFc_TextChanged(object sender, EventArgs e)
         {
             try
@@ -248,7 +165,7 @@ namespace URIdreieckGUI
 
         /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
         //  Tab4    -   Gewitter
-
+   
         private void vGt_TextChanged(object sender, EventArgs e)
         {
             {
@@ -369,10 +286,6 @@ namespace URIdreieckGUI
             rb1.Checked = false;
             rb2.Checked = false;
             rb3.Checked = false;
-            tb1.Enabled = true;
-            tb2.Enabled = true;
-            //          this.tb3.Enabled = true;
-            tb4.Enabled = true;
             //  Tab 2 - Clear
             vGRA1.Clear();
             vGRA2.Clear();
