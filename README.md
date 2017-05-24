@@ -5,6 +5,7 @@ Kleine Funktionssammlung:
           & Arithmetik ( Addition, Subtraktion, Division (mit Rest), Multiplikation
           & Fahrenheit Umrechner 
           & Gewitter Entfernungsberrehnung (ohne Gewähr!)
+          & Base64 De/EnCoding
           
   Entstanden aus den Aufgaben eines Scripts, die eigentlich in einer Konsolen-Application verarbeitet werden sollten.
   
