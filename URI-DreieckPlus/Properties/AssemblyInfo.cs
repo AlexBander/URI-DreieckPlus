@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
 [assembly: AssemblyTitle("URI-Dreieck XITS")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Entstanden aus den Aufgaben eines Scripts, die eigentlich in einer Konsolen-Application verarbeitet werden sollten")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Xandersoft IT Soltuion")]
 [assembly: AssemblyProduct("URI-Dreieck XITS")]
@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 // Durch Festlegen von ComVisible auf "false" werden die Typen in dieser Assembly unsichtbar 
 // für COM-Komponenten.  Wenn Sie auf einen Typ in dieser Assembly von 
 // COM aus zugreifen müssen, sollten Sie das ComVisible-Attribut für diesen Typ auf "True" festlegen.
-[assembly: ComVisible(false)]
+[assembly: ComVisible(true)]
 
 // Die folgende GUID bestimmt die ID der Typbibliothek, wenn dieses Projekt für COM verfügbar gemacht wird
 [assembly: Guid("71fd4951-5d85-4db1-bf8f-517fa8cd3e7d")]

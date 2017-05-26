@@ -106,6 +106,7 @@
             this.label27 = new System.Windows.Forms.Label();
             this.btEnBase64 = new System.Windows.Forms.Button();
             this.deCodeBase64 = new System.Windows.Forms.GroupBox();
+            this.copyText = new System.Windows.Forms.Button();
             this.pastIN = new System.Windows.Forms.Button();
             this.decodeReset = new System.Windows.Forms.Button();
             this.outBase64 = new System.Windows.Forms.TextBox();
@@ -115,7 +116,6 @@
             this.label26 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btn3 = new System.Windows.Forms.Button();
-            this.copyText = new System.Windows.Forms.Button();
             this.Base64.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -132,7 +132,7 @@
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(365, 318);
+            this.btn1.Location = new System.Drawing.Point(390, 318);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(75, 23);
             this.btn1.TabIndex = 6;
@@ -142,7 +142,7 @@
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(50, 318);
+            this.btn2.Location = new System.Drawing.Point(12, 318);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(75, 23);
             this.btn2.TabIndex = 7;
@@ -941,7 +941,7 @@
             this.btEnBase64.Name = "btEnBase64";
             this.btEnBase64.Size = new System.Drawing.Size(75, 23);
             this.btEnBase64.TabIndex = 0;
-            this.btEnBase64.Text = "Encodeing";
+            this.btEnBase64.Text = "encode";
             this.btEnBase64.UseVisualStyleBackColor = true;
             this.btEnBase64.Click += new System.EventHandler(this.btEnBase64_Click);
             // 
@@ -960,6 +960,19 @@
             this.deCodeBase64.TabIndex = 1;
             this.deCodeBase64.TabStop = false;
             this.deCodeBase64.Text = "DeCode Base64";
+            // 
+            // copyText
+            // 
+            this.copyText.BackgroundImage = global::URIdreieckGUI.Properties.Resources.copy;
+            this.copyText.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.copyText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.copyText.ForeColor = System.Drawing.Color.Transparent;
+            this.copyText.Location = new System.Drawing.Point(409, 57);
+            this.copyText.Name = "copyText";
+            this.copyText.Size = new System.Drawing.Size(31, 24);
+            this.copyText.TabIndex = 8;
+            this.copyText.UseVisualStyleBackColor = true;
+            this.copyText.Click += new System.EventHandler(this.copyText_Click);
             // 
             // pastIN
             // 
@@ -1019,15 +1032,15 @@
             this.deCodeB64.Name = "deCodeB64";
             this.deCodeB64.Size = new System.Drawing.Size(75, 23);
             this.deCodeB64.TabIndex = 0;
-            this.deCodeB64.Text = "Decodeing";
+            this.deCodeB64.Text = "decode";
             this.deCodeB64.UseVisualStyleBackColor = true;
             this.deCodeB64.Click += new System.EventHandler(this.deCodeB64_Click);
             // 
             // label26
             // 
-            this.label26.Location = new System.Drawing.Point(150, 311);
+            this.label26.Location = new System.Drawing.Point(93, 311);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(199, 37);
+            this.label26.Size = new System.Drawing.Size(291, 37);
             this.label26.TabIndex = 29;
             this.label26.Text = "Version";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1045,19 +1058,6 @@
             this.btn3.TabIndex = 8;
             this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
-            // 
-            // copyText
-            // 
-            this.copyText.BackgroundImage = global::URIdreieckGUI.Properties.Resources.copy;
-            this.copyText.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.copyText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.copyText.ForeColor = System.Drawing.Color.Transparent;
-            this.copyText.Location = new System.Drawing.Point(409, 57);
-            this.copyText.Name = "copyText";
-            this.copyText.Size = new System.Drawing.Size(31, 24);
-            this.copyText.TabIndex = 8;
-            this.copyText.UseVisualStyleBackColor = true;
-            this.copyText.Click += new System.EventHandler(this.copyText_Click);
             // 
             // URIForm
             // 
