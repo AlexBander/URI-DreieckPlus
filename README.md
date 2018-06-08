@@ -10,3 +10,7 @@ Kleine Funktionssammlung:
   Entstanden aus den Aufgaben eines Scripts, die eigentlich in einer Konsolen-Application verarbeitet werden sollten.
   
   ## Wer reschtreibfähler Findet kann sie gern behalten, korrigiern oder mir mitteilen.
+  
+  # Support is discontinued
+  ## preparing to switch to a non microsoft (fucking M$) platform
+ 
