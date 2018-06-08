@@ -11,6 +11,7 @@ Kleine Funktionssammlung:
   
   ## Wer reschtreibfähler Findet kann sie gern behalten, korrigiern oder mir mitteilen.
   
-  # Support is discontinued
+  # Support is discontinued 
+  since buy through Mircorsoft
   ## preparing to switch to a non microsoft (fucking M$) platform
  
